@@ -4,13 +4,16 @@
   --color-hero-title: #ffffff;
   --accent-color-text: #2196f3;
   --accent-color-bg: #188ce8;
+  --bg-color-title: #ffffff;
   --bg-color-first: #2f303a;
   --bg-color-second: #f5f4fa;
   --color-text-footer: #ffffff;
   --color-btn-hover: #ffffff;
   --bg-color-btn: #2196f3;
 }
+
 .body {
+  margin: 0;
   font-family: roboto, sans-serif;
   color: var(--second-color-text);
 }
@@ -63,6 +66,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0, 2em;
+  background-color: var(--bg-color-title);
 }
 .header-navigation-site {
   color: var(--first-color-text);
@@ -107,6 +111,9 @@
   background-color: var(--accent-color-bg);
 }
 /* Feature */
+.feature {
+  background-color: var(--bg-color-title);
+}
 .feature-title {
   font-weight: 700;
   font-size: 14px;
@@ -119,6 +126,9 @@
   line-height: 1.71;
 }
 /* Мы предлагаем */
+.product {
+  background-color: var(--bg-color-title);
+}
 /* Наща команда  */
 .team {
   background-color: var(--bg-color-second);
@@ -155,11 +165,10 @@
   color: rgba(255, 255, 255, 0.6);
 }
 /* ПОРТФОЛИО ФИЛЬТР*/
+.filter {
+  background-color: var(--bg-color-title);
+}
 .filter-btn {
-  /* font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center; */
   color: var(--first-color-text);
   background-color: var(--bg-color-second);
 }
