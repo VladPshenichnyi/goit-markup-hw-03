@@ -21,6 +21,9 @@
   text-decoration: none;
   color: inherit;
 }
+.active {
+  color: var(--accent-color-text);
+}
 .link:hover,
 .link:focus {
   color: var(--accent-color-text);
