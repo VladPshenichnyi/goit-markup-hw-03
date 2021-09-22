@@ -12,13 +12,39 @@
   --bg-color-btn: #2196f3;
 }
 
-.body {
+.conteiner {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.body {
   font-family: roboto, sans-serif;
   color: var(--second-color-text);
 }
 .main {
   letter-spacing: 0.03em;
+}
+.list {
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -62,14 +88,40 @@
 }
 /* Шапка */
 .header {
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0, 2em;
   background-color: var(--bg-color-title);
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .header-navigation-site {
+  display: flex;
+  align-items: center;
   color: var(--first-color-text);
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.header-navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 .header-logo {
   font-family: Raleway;
@@ -80,16 +132,20 @@
   letter-spacing: 0.03em;
   color: var(--first-color-text);
   text-decoration: none;
+  margin-right: 93px;
+}
+.header-mail-link {
+  margin-right: 50px;
 }
 /* Hero */
 .hero {
+  text-align: center;
   background-color: var(--bg-color-first);
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-hero-title);
@@ -103,7 +159,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--color-hero-title);
-  background-color: var(--accent-color-text);
+  background-color: var(--bg-color-btn);
   cursor: pointer;
 }
 .hero-btn:hover,
@@ -147,6 +203,7 @@
 }
 /* Подвал */
 .footer {
+  text-align: left;
   background-color: var(--bg-color-first);
   color: var(--color-text-footer);
   letter-spacing: 0.03em;
