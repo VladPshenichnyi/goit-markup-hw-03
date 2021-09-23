@@ -109,7 +109,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0, 2em;
   background-color: var(--bg-color-title);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-container {
   display: flex;
@@ -127,8 +129,6 @@ img {
 .nav-link {
   display: flex;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .header-navigation-item:not(:last-child) {
@@ -196,9 +196,14 @@ img {
 /* Feature */
 .feature {
   background-color: var(--bg-color-title);
+  padding-bottom: 0;
 }
 .feature-list {
   display: flex;
+}
+
+.feature-item {
+  width: 270px;
 }
 .feature-item:not(:last-child) {
   margin-right: 30px;
@@ -246,9 +251,17 @@ img {
 .team-item {
   flex-basis: calc(100% / 4 -30px);
   margin-left: 30px;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+  border-top: none2;
 }
-.img-teamcard {
+/* .img-teamcard {
   margin-bottom: 30px;
+} */
+.team-title-group {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-title {
   margin-bottom: 10px;
@@ -259,13 +272,14 @@ img {
   color: var(--first-color-text);
 }
 .team-text {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 /* Подвал */
 .footer {
+  display: block;
+  justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: left;
@@ -284,13 +298,21 @@ img {
   color: var(--color-text-footer);
   text-decoration: none;
 }
+.address {
+  margin-bottom: 9px;
+}
 .address-link {
+  display: block;
+  justify-items: flex-start;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-mail-link {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  display: block;
+  margin-bottom: -15px;
+}
+.footer-tel-link {
+  display: block;
 }
 /* ПОРТФОЛИО ФИЛЬТР*/
 .filter {
@@ -325,7 +347,7 @@ img {
   margin-bottom: -30px;
 }
 .project-item {
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
 }
